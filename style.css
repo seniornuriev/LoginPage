@@ -1,0 +1,100 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, sans-serif;
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-panel {
+    display: flex;
+    flex-direction: column;
+
+    text-align: center;
+
+    width: 320px;
+    height: 300px;
+    border-radius: 0.4rem;
+
+    background-color: #fff;
+    box-shadow: 0 2px 4px -1px rgba(0,0,0,.2), 0 4px 5px 0 rgba(0,0,0,.14), 0 1px 10px 0 rgba(0,0,0,.12);
+    transition: box-shadow 280ms cubic-bezier(.4,0,.2,1);
+
+    padding: 3rem 2rem 1rem 2rem;
+}
+
+.auth-form__input,
+.auth-form__button
+{
+    width: 100%;
+
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+
+    padding: 10px 14px;
+    margin: 0.5rem 0rem;
+}
+
+.login-panel__title {
+    color: #FF0373;
+
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: bold;
+}
+
+.login-panel__alert_danger {
+    font-weight: 600;
+
+    color: #D0021B;
+}
+
+.login-panel__alert_success {
+    font-weight: 500;
+
+    color: #4BBD5C;
+}
+
+auth-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.auth-form__button {
+    font-weight: 700;
+    font-size: 1rem;
+
+    border: none;
+
+    color: #fff;
+    background-color: #FF0373;
+}
+
+.auth-form__button:hover {
+    color: #FF0373;
+    background-color: #fff;
+
+    border: 1px solid #FF0373;
+
+    cursor: pointer;
+    transition: 280ms cubic-bezier(.4,0,.2,1);
+}
+
+.auth-form__input {
+    width: 90%;
+    border: 1px solid #ede1eb;
+    color: inherit;
+}
+
+.auth-form__input:focus {
+    /*border: 1px solid red;*/
+    outline: 1px solid #FF0373;
+    transition: 50ms cubic-bezier(.4,0,.2,1);
+    background-color: #fcf5fb;
+}
+
+
+
