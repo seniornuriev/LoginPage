@@ -1,7 +1,17 @@
-body{
+*, *:after. *:before {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+
     margin: 0;
     padding: 0;
-    font-family: Verdana, sans-serif;
+}
+
+.card {
+    font-family: 'Open Sans', sans-serif;
+
     width: 100vw;
     height: 100vh;
 
@@ -11,31 +21,16 @@ body{
 }
 
 .login-panel {
-    display: flex;
-    flex-direction: column;
-
     text-align: center;
 
     width: 320px;
-    height: 300px;
-    border-radius: 0.4rem;
+    border-radius: 4px;
 
-    background-color: #fff;
+    background: #fff;
     box-shadow: 0 2px 4px -1px rgba(0,0,0,.2), 0 4px 5px 0 rgba(0,0,0,.14), 0 1px 10px 0 rgba(0,0,0,.12);
-    transition: box-shadow 280ms cubic-bezier(.4,0,.2,1);
+    transition: .4s;
 
-    padding: 3rem 2rem 1rem 2rem;
-}
-
-.auth-form__input,
-.auth-form__button
-{
-    width: 100%;
-
-    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-
-    padding: 10px 14px;
-    margin: 0.5rem 0rem;
+    padding: 32px;
 }
 
 .login-panel__title {
@@ -46,54 +41,59 @@ body{
     font-weight: bold;
 }
 
-.login-panel__alert_danger {
+.message {
     font-weight: 600;
+    padding: 5px;
+}
 
+
+.message__danger {
     color: #D0021B;
 }
 
-.login-panel__alert_success {
-    font-weight: 500;
-
+.message__success {
     color: #4BBD5C;
 }
 
-auth-form {
-    display: flex;
-    flex-direction: column;
+.auth-form-component {
+    width: 100%;
+    margin: 5px 0px;
+    padding: 10px 14px;
+
+    font-family: 'Open Sans', sans-serif;
 }
 
-.auth-form__button {
-    font-weight: 700;
+.button {
     font-size: 1rem;
 
+    outline: none;
     border: none;
 
     color: #fff;
-    background-color: #FF0373;
+    background: #FF0373;
 }
 
-.auth-form__button:hover {
+.button:hover {
     color: #FF0373;
-    background-color: #fff;
+    background: #fff;
 
-    border: 1px solid #FF0373;
+
+    outline: 1px solid #FF0373;
 
     cursor: pointer;
-    transition: 280ms cubic-bezier(.4,0,.2,1);
+    transition: 0.4s;
 }
 
-.auth-form__input {
+.input {
     width: 90%;
     border: 1px solid #ede1eb;
     color: inherit;
 }
 
-.auth-form__input:focus {
-    /*border: 1px solid red;*/
+.input:focus {
     outline: 1px solid #FF0373;
-    transition: 50ms cubic-bezier(.4,0,.2,1);
-    background-color: #fcf5fb;
+    transition: 0.1s;
+    background: #fcf5fb;
 }
 
 
